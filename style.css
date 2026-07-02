@@ -118,12 +118,13 @@ li {
     
 }
 
-section>div {
-    border-bottom: 1px solid black;;
-}
+
 
 /* style section footer */
 
+footer {
+    border-top:1px solid black
+}
 .bi {
     width:22px;
     height:22px
