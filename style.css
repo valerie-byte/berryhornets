@@ -10,61 +10,69 @@ h1 {
     text-transform: uppercase;
 }
 
-
-/* style pour le header */
-header {
-   padding-bottom:2px;
-   /* background-color: rgba(245, 185, 74, 0.904); */
-}
-
-.navbar, footer{
-    background-image: url('img/background_header_desktop.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    min-height:250px;
-        
-} 
-
-
-
- .container {
-    flex-direction: column; 
-    padding-left: 500px 
-} 
-
-
-
-@media (max-width:992px) {
-    .navbar ,footer{
-        background-image: url('img/background_header_mobile.png'); 
-        background-position: left center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        min-height:180px
-    } 
-
-     .navbar-collapse {
-        position: absolute;
-        top: 50%;
-        right: 10;
-        padding: 1rem;
-        border-radius: 0 0 0 10px;
-        min-width: 220px;
-        z-index: 999;
-    }
-     .navbar-nav {
-        align-items: flex-end;
-    }
-
-     .container {
-        flex-direction: column; 
-        padding-left: 10px
-    } 
+.img-header {
     
+    background-image: url('img/header_footer/background_header_desktop.png');
+    background-size: cover;
+    background-position: center ;
+    height:320px;
+    position:relative;
+    /* margin-bottom: 0.5rem; */
+        
+}  
+/* position des éléments du menu */
+.img-header .navbar {
+    position: absolute;
+    top:0;
+    width:100%;
+   
 }
 
+/* position du num tél */
+.btn-tel{
+    position:absolute; 
+    top:50;
+    left:150;
+    /* width:100%; */
+}
 
+.nav-link {
+    color:#44230d;
+    font-weight: bold;
+    /* font-size:1.5rem; */
+    margin: 0 .8rem
+}
+
+.nav-link:hover {
+    color:#b35b00
+
+}
+/* display pour tablette et PC */
+@media (max-width:992px) {
+    .nav-link {
+        font-size:1rem;
+    }
+
+  
+
+}
+
+/* display pour tél mobile */
+@media (max-width:768px) {
+    .img-header{
+        background-image: url('img/header_footer/background_header_mobile.webp'); 
+        height:300px;
+    }  
+    nav   {
+        background-color: rgba(245,216,163,.80);
+    }
+
+      .btn {
+        font-size:.9rem;
+    }
+
+  
+}
 
 .nom_societe {
     font-size: 20px;
@@ -75,13 +83,13 @@ header {
     
 } 
 
-.nav-item>a {
+/* .nav-item>a {
     font-size:26px;
-}
+} */
 
 /* style section accueil */
 #accueil {
-    background-color: rgba(214, 120, 32, 0.884);
+    background-color: rgba(214, 120, 32, .884);
     padding-top: 2px;
     
 }
@@ -92,7 +100,7 @@ header {
 /* style section nos services */
 #nosservices {
     background-color: rgb(236, 194, 143);
-    height:50vh;
+    padding:40px 0;
     
  
 }
@@ -122,8 +130,17 @@ li {
 
 /* style section footer */
 
-footer {
-    border-top:1px solid black
+.footer {
+    border-top:1px solid black;
+    background-image: url('img/background_footer_desktop.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 220px;
+ 
+  
+}
+.img-footer {
+    max-width:100px;
 }
 .bi {
     width:22px;
@@ -137,13 +154,14 @@ p {
 }
 
 /* responsive footer */
-@media(max-width:768px) {
+@media(max-width:992px) {
+    .footer {
+        background-image: url('img/background_footer_mobile.jpg'); 
+        /* background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat; */
+    }
 
-     /* footer img {
-        width:100px;
-        height:10vh
-     } */
-    
      p{
         font-size: 12px;
      }

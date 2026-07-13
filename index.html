@@ -15,54 +15,97 @@
   <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
-<header >
-  <nav class="navbar navbar-expand-lg shadow-sm  ">
-    <div class="container " >
-
-      <!-- bouton burger  -->
-      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- contenu du menu  -->
-      <div class="collapse navbar-collapse " id="navbarContent" >
-        
-       
-          <!-- menu burger -->
-          <ul class=" navbar-nav ms-auto mb-2 mb-lg-0 text-end ">
-           
-            <li class="nav-item ">
-              <a class="nav-link active" href="#accueil">Accueil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#nosservices">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#galerie">Galerie</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>    
-        
-      
-      </div> 
-      <div>
-        <a href="tel:0610585025" class="btn btn-outline-primary btn-sm p-2 "> 
-            <svg xmlns="http://www.w3.org 0/svg" height="20px" viewBox="0 -960 960 960" width="24px" fill="#EA3323"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
-          0610585025
-        </a>
+<header>
+  <div class="container-fluid text-center bg-dark fs-4 ">
+    <div class="row">
+      <div class="col-8 text-center text-uppercase text-white  ">Berry Hornets - solution 3D contre les nuisibles</div>
+      <div class="col-3">
+        <a href="tel:0610585025" class="btn btn-warning">  
+        <svg xmlns="http://www.w3.org 0/svg" height="20px" viewBox="0 -960 960 960" width="24px" fill="#EA3323"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg> 
+          0610585025 
+        </a> 
       </div>
-
     </div>
-    <h1 style="color:red">site en construction</h1>
-    
-  </nav>
+  </div>
   
+  <!-- image -->
+  <div class="img-header mb-2">
+
+<!-- menu navbar pour tablette et PC le menu s'affiche uniquement sur ces écrans-->
+    <nav class="navbar navbar-expand-md d-none d-md-flex ">
+   <!-- logo -->
+
+  <!-- contenu du menu  -->
+        
+      <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mx-auto  ">
+        <li class="nav-item ">
+          <a class="nav-link active fs-1" href="#accueil">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-1" href="#nosservices">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-1" href="#gallery">Galerie</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-1" href="#contact">Contact</a>
+        </li>
+      </ul>    
+    </div> 
+  </nav>  
+  
+<!-- placer le bouton sous le menu -->
+    <!-- <div class="btn-tel"> -->
+      <!-- fw-bol order-1 order-lg-3 ms-auto me-3 -->
+      <!-- <a href="tel:0610585025" class="btn btn-warning  ">  -->
+      <!-- <svg xmlns="http://www.w3.org 0/svg" height="20px" viewBox="0 -960 960 960" width="24px" fill="#EA3323"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg> -->
+          <!-- 0610585025 -->
+      <!-- </a> -->
+    <!-- </div> -->
+  <!-- </div> -->
+
+<!-- menu navbar pour mobile le menu s'affiche uniquement sur ces écrans-->
+ <nav class="navbar navbar-expand-lg d-md-none ">
+    <!-- logo -->
+
+    <!-- bouton burger -->
+    <button class="navbar-toggler order-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContentMobile">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- contenu du menu  -->
+    <div class="collapse navbar-collapse order-4 order-lg-2" id="navbarContentMobile" >
+        
+      <div class="container">
+      <ul class="navbar-nav mx-auto  ">
+        <li class="nav-item ">
+          <a class="nav-link active" href="#accueil">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#nosservices">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gallery">Galerie</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>    
+    </div> 
+
+    <div class="container">
+      <a href="tel:0610585025" class="btn btn-warning fw-bol order-1 order-lg-3 ms-auto me-3 "> 
+      <svg xmlns="http://www.w3.org 0/svg" height="20px" viewBox="0 -960 960 960" width="24px" fill="#EA3323"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+          0610585025
+      </a>
+    </div>
+      <!-- <h1 style="color:red">site en construction</h1>-->
+  </nav>
 </header>
 
 <body>
-  <section id="accueil" class="d-flex ">
+  <section id="accueil" class="d-flex mb-2 ">
     <img id="imageaccueil" class="img-fluid rounded mx-auto d-block" src="img/img_accueil.png" alt="accueil">
   </section>
 
@@ -114,19 +157,20 @@
 
 </body>
 
-<footer class="mt-5 py-3" >
-  <div class="container "> 
-    <div class="row align-items-center text-center ms-0 d-inline d-flex">
+<footer class="footer mt-5 text-dark" >
+  <div class="container py-4 "> 
+    <div class="row align-items-center gy-4">
             
-      <div class="col-9">
+      <div class="col-12 col-lg-4 text-center">        
         <h3 class="nom_societe">Berry Hornets</h3>
+          <p class="small mb-0">solution 3D contre les nuisibles</p>
           <p>tel : 06 10 58 50 25</p>
           <p>SIRET n°927 653 477</p>
 
       </div>
   
-      <div class="col-3 text-center">  
-        <div class="mb-3">  
+      <div class="col-12 col-md-2 text-end">  
+        <div>  
           <a href="https://www.facebook.com/profile.php?id=61561860178932">
             <svg xmlns="http://www.w3.org/2000/svg" fill="" class="bi bi-facebook" viewBox="0 0 16 16">
               <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
@@ -134,7 +178,7 @@
           </a> 
         </div>
         <div>
-          <img src="./img/LOGO-CERTIBIOCIDE.jpg" alt="logo_certibiocide" class=" img-fluid rounded">
+          <img src="./img/LOGO-CERTIBIOCIDE.jpg" alt="logo_certibiocide" class=" img-fluid img-footer rounded">
         </div>
       </div>
    </div>
