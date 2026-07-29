@@ -1,6 +1,6 @@
 const galllery = document.getElementById("gallery");
 
-for (let i = 1; i<=16; i++) {
+for (let i = 1; i<=14; i++) {
     // ajoute un élément HTML
     galllery.innerHTML +=
     `<div class="col-12 col-sm-6 col-lg-4 ">
